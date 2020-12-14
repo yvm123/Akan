@@ -1,0 +1,26 @@
+.max-height{
+    height: auto;
+  }
+  .height1{
+    height: 60%;
+  }
+  .box{
+    width: auto;
+    padding: 20px 50px 10px 50px;
+    margin: 20px;  
+  }
+  body{
+    background-color: rgb(241, 224, 191);
+  }
+  #out{
+    font-family: "Times New Roman", Times, serif;
+  }
+  .dtitle{
+    color: rgb(94, 72, 17);
+    font-size: xx-large;
+  }
+  .box1{
+    width: auto;
+    padding: 50px;
+    margin: 20px;
+  }
