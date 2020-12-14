@@ -14,3 +14,18 @@ function submit() {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
     var n=0;
+    if (d<=0 || d>31) {
+        document.getElementById("output").innerHTML= 'Invalid date input, please try again.'
+      } else if(m>12 || m<=0){
+        document.getElementById("output").innerHTML= 'Invalid month input, please try again.'
+      }
+      // the previous step wasn't needed for it's made not possible to input no related info or skip.
+      while (n<7) {
+        if(g=='Male' && n==d){
+          document.getElementById("output").innerHTML= weekday[n] + '. ' + maleNames[n] + ' is your Akan name';
+        }else if (g=='Female' && n==d) {
+          document.getElementById("output").innerHTML= weekday[n] + '. ' + femaleNames[n] + ' is your Akan name';
+        }
+        n=n+1;
+      }
+    }
